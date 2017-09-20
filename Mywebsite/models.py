@@ -7,6 +7,7 @@ class Blog(models.Model):
     name = models.CharField(max_length = 35)
     email = models.EmailField(max_length = 40)
     comments = models.TextField
+    course = models.TextField
 
 class Reader(models.Model):
     About = models.TextField

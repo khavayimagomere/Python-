@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'forumapp',
     'Mywebsite',
+    'rest_framework'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'my_site_2017.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ 'forumapp/template',
+        'DIRS': [ 'forumapp/template/',
                     ],
         'APP_DIRS': True,
         'OPTIONS': {

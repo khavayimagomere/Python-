@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Vallary</title>
+  <title>vallary</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Fault in our stars</h1>
-    
-    <p>Hello, welcome to my apartment thank for stopping by. i love kids</p>
-    
-</body>
 
-    
+<div class="container">
+  <h2>Student list</h2>
+  <p>Current students:</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+          <th>name</th>
+          <th>course</th>
+          <th>year</th>
+          <th>email</th>
+      </tr>
+      
+      {%for Student in students%}
+     <tr>
+         <td>{{Student.name}}</td>
+         <td>{{Student.course}}</td>
+         <td>{{Student.year}}</td>
+         <td>{{Student.email}}</td>
+     </tr>
+      
+      {%endfor%}
+    </tbody>
+  </table>
+</div>
+
+</body>
 </html>

@@ -3,7 +3,7 @@ from Mywebsite.models import Blog, Reader
 # Register your models here.
 
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ['name', 'email','comments']
+    list_display = ['name', 'email','comments', 'course']
 admin.site.register(Blog, BlogAdmin)
 
 class ReaderAdmin(admin.ModelAdmin):

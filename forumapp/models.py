@@ -7,6 +7,7 @@ class Student(models.Model):
     name = models.CharField(max_length = 30)
     course = models.CharField(max_length = 35)
     year = models.IntegerField()
+    email = models.EmailField(max_length = 40, default = '')
     
     
 class Empathy(models.Model):
